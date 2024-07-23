@@ -1,13 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap');
+
+/* Apply the font to your desired elements */
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 1.3rem
+  /* Adjust font size, weight, etc. as needed */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  display: flex;
+  min-height: 100vh; /* Ensures full viewport height */
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa; /* Light background */
 }
+
+.login-container {
+  background-color: #ffffff;
+  padding: 3rem;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 700px;
+  color: #17185e;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="date"],
+textarea,
+.text{
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+  width: 90%;
+}
+
+button[type="submit"] {
+  background-color: #17185e; /* Blue button color */
+  color: #fff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover,.btn:hover {
+  background-color: #301f9d; /* Darker blue on hover */
+}
+
+p {
+  color: #0f0f0f;
+  margin-top: 0.5rem;
+}
+
+.message {
+  text-align: center;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.welcome-message{
+color:white;
+font-size: 16px;
+}
+.message.success {
+  color: green;
+  background-color: #e0ffe0; /* Light green background */
+}
+
+.message.error {
+  color: red;
+  background-color: #ffe0e0; /* Light red background */
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-start; /* Align items to the start of the container */
+  gap: 10px; /* Add a small gap between the buttons */
+}
+
+
+.btn-danger {
+  background-color: red;
+}
+
+.btn-grey {
+  background-color: grey;
+}
+
+.btn-back {
+  background-color: #17185e;
+}
+
+.btn-back:hover {
+  background-color: #301f9d;
+}
+
+.job-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+/* Individual job item styling */
+.job-item {
+  background-color: #f9f9f9;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding-bottom:10px;
+  padding-left: 10px;
+  padding-top: 0px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.job-item:hover {
+  transform: scale(1.02);
+}
+
+/* Job title styling */
+.job-title {
+  font-size: 18px;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+/* Deadline styling */
+.job-deadline {
+  font-size: 1rem;
+  margin-bottom: 0px;
+  color: red;
+}
+
+/* Job description styling */
+.job-description {
+  font-size: 1rem;
+  margin-bottom: 0px;
+}
+
+/* Posted by styling */
+.job-posted-by {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+.job-posted-by.details {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+/* View details link styling */
+.view-details-link {
+  font-size: 1rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.view-details-link:hover {
+  text-decoration: underline;
+}
+
+/* Loading and error message styling */
+.loading-message, .error-message {
+  font-size: 16px;
+  margin: 20px 0;
+}
+.title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  list-style-type: none;
+  padding: 0;
+}
+
+.user-item {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 15px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.user-item:hover {
+  transform: scale(1.05);
+}
+
+.user-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.user-username {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.delete-button {
+  background-color: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.delete-button:hover {
+  background-color: #ff1a1a;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+}
+
+/* No jobs message styling */
+.no-jobs-message {
+  font-size: 16px;
+  margin: 20px 0;
+}
+
+.category-list {
+  list-style: none;
+  padding: 0;
+}
+
+.category-item {
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.category-item:hover {
+  transform: scale(1.02);
+}
+
+.category-name {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .login-container {
+    padding: 2rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* Nav Bar */
+
+/* Import the Google Font for Darker Grotesque */
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap');
+
+/* Apply the font to your desired elements */
+body {
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 1.3rem
+  /* Adjust font size, weight, etc. as needed */
+}
+
+/* Alternatively, apply to specific elements */
+.heading {
+  font-family: 'Darker Grotesque', sans-serif;
+  font-weight: 700; /* Adjust weight here */
+  font-size: 1.5rem; /* Adjust size here */
+}
+
+
+.navbar {
+    background-color: #17185e;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 220px;
+    z-index: 1; /* Ensure navbar is on top */
+    overflow-y: auto;
+  }
+  
+  .navbar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+  }
+
+  .navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .navbar-item {
+    width: 100%;
+  }
+  
+  .navbar-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .navbar-link i {
+    margin-right: 0.5rem;
+  }
+  .navbar-link:hover {
+    color: #b5b2c5;; /* Blue hover color */
+  }
+
+  /* Mobile styles */
+  .menu-toggle {
+    background: none;
+    border: none;
+    color: #17185e;
+    font-size: 1.5rem;
+    display: none;
+    cursor: pointer; /* Added cursor pointer for better UX */
+  }
+  
+  /* Responsive design (adjust as needed) */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+      position: fixed;
+      top: 1rem;
+      left: 1rem;
+      z-index: 2; /* Ensure the toggle button is on top */
+      color: white;
+      background-color: #17185e;
+    }
+    .navbar.open {
+        transform: translateX(0%);
+      }
+      .navbar {
+        background-color: #17185e;
+        padding: 1rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 220px;
+        transform: translateX(-100%);
+        z-index: 1; /* Ensure navbar is on top */
+        overflow-y: auto;
+      } 
+
+      .navbar-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 100%;
+      }
+    
+
+      .navbar-item {
+        width: 100%;
+        text-align: center;
+        padding: 0px;
+
+      }
+      .navbar-menu {
+        margin: 0;
+        padding: 0;
+        margin-top: 3rem;
+      }
+      .main-container {
+        margin-left: 4rem;
+      }
+
+  }
+
+  @media (min-width: 769px) {
+    .main-container {
+      margin-left: 15rem;
+    }
+  }  
+  
