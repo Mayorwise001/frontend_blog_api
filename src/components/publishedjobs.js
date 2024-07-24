@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-
+import Navbar from './navbar';
 import { Link } from 'react-router-dom';
 
 
@@ -58,7 +58,7 @@ const PublishedJobs = () => {
 
     return (
         <div className='main-container'>
-
+          <Navbar />
             <h2>Published Jobs</h2>
             {loading && <p className="loading-message">Loading...</p>} {/* Display loading message if loading */}
             {error && <p className="error-message">{error}</p>}
