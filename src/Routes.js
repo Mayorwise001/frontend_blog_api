@@ -8,6 +8,11 @@ import ProtectedRoute from './components/protectedroute';
 import AllUsers from './components/allusers';
 import AddCategory from './components/addcategory';
 import AddJob from './components/addjob';
+import EditJob from './components/editjob';
+import JobDetails from './components/jobdetails';
+import Register from './components/register';
+import UnpublishedJobs from './components/unpublishedJob';
+import ViewCategories from './components/viewcategories';
 
 
 function Routed(){
@@ -36,6 +41,24 @@ function Routed(){
                     <Route index element={<AddJob />} />
                     <Route/>
                     </Route> 
+                <Route path="/editjob/:id" element={<ProtectedRoute />}>
+                    <Route index element={<EditJob />} />
+                    <Route/>
+                    </Route> 
+                <Route path="/job-details/:id" element={<ProtectedRoute />}>
+                    <Route index element={<JobDetails/>} />
+                    <Route/>
+                    </Route> 
+                <Route path="/unpublish" element={<ProtectedRoute />}>
+                    <Route index element={<UnpublishedJobs/>} />
+                    <Route/>
+                    </Route> 
+                <Route path="/allcategories" element={<ProtectedRoute />}>
+                    <Route index element={<ViewCategories/>} />
+                    <Route/>
+                    </Route> 
+                <Route path="/register" element={<Register />}/>
+
             </Routes>
         </Router>
 
