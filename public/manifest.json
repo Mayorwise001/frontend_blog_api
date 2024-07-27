@@ -16,6 +16,11 @@
       "src": "logo512.png",
       "type": "image/png",
       "sizes": "512x512"
+    },
+    {
+      "src": "job.ico",
+      "type": "image/png",
+      "sizes": "304x300"
     }
   ],
   "start_url": ".",
