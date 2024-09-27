@@ -15,7 +15,7 @@ const Login = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post('https://blogapi2-pxnf.onrender.com/api/login', {
+            const response = await axios.post('https://blogapi2-o4p8.onrender.com/api/login', {
                 email,
                 password
             });

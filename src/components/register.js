@@ -29,7 +29,7 @@ const Register = () => {
         }
         
         try {
-            const response = await axios.post('https://blogapi2-pxnf.onrender.com/api/register',  {
+            const response = await axios.post('https://blogapi2-o4p8.onrender.com/api/register',  {
                 firstName,
                 lastName,
                 username,

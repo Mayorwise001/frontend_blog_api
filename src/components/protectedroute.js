@@ -14,7 +14,7 @@ const ProtectedRoute = () => {
       }
 
       try {
-        const response = await axios.get('https://blogapi2-pxnf.onrender.com/api/check-auth', {
+        const response = await axios.get('https://blogapi2-o4p8.onrender.com/api/check-auth', {
           headers: {
             Authorization: token
           }

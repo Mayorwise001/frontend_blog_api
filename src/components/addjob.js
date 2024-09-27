@@ -21,7 +21,7 @@ const AddJob = () => {
                 return;
             }
             try {
-                const response = await axios.get('https://blogapi2-pxnf.onrender.com/api/categories', {
+                const response = await axios.get('https://blogapi2-o4p8.onrender.com/api/categories', {
                     headers: {
                         Authorization: token
                     }
@@ -46,7 +46,7 @@ const AddJob = () => {
         }
 
         try {
-            const response = await axios.post('https://blogapi2-pxnf.onrender.com/api/add-job', {
+            const response = await axios.post('https://blogapi2-o4p8.onrender.com/api/add-job', {
                 jobTitle,
                 jobDescription,
                 deadline,

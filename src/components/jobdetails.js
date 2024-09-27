@@ -25,7 +25,7 @@ const JobDetails = () => {
 
 
             try {
-                const response = await axios.get(`https://blogapi2-pxnf.onrender.com/api/job-details/${id}`,{
+                const response = await axios.get(`https://blogapi2-o4p8.onrender.com/api/job-details/${id}`,{
                     headers: {
                         Authorization: token
                       }
@@ -57,7 +57,7 @@ const JobDetails = () => {
         }
 
         try {
-            await axios.delete(`https://blogapi2-pxnf.onrender.com/api/job-details/${id}`, {
+            await axios.delete(`https://blogapi2-o4p8.onrender.com/api/job-details/${id}`, {
                 headers: {
                     Authorization: token
                 }

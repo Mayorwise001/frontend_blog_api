@@ -9,7 +9,7 @@ const SignOut = () => {
   useEffect(() => {
     const signOut = async () => {
       try {
-        await axios.post('https://blogapi2-pxnf.onrender.com/api/logout', {}, { withCredentials: true });
+        await axios.post('https://blogapi2-o4p8.onrender.com/api/logout', {}, { withCredentials: true });
         localStorage.removeItem('token');
         localStorage.removeItem('user');
         navigate('/');

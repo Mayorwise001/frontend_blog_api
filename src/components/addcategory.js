@@ -17,7 +17,7 @@ const AddCategory = () => {
         }
 
         try {
-            const response = await axios.post('https://blogapi2-pxnf.onrender.com/api/addcategory', { name }, {
+            const response = await axios.post('https://blogapi2-o4p8.onrender.com/api/addcategory', { name }, {
                 headers: {
                     Authorization: token
                 }

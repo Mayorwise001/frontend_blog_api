@@ -17,7 +17,7 @@ const AllUsers = () => {
             }
 
             try {
-                const response = await axios.get('https://blogapi2-pxnf.onrender.com/api/all-users', {
+                const response = await axios.get('https://blogapi2-o4p8.onrender.com/api/all-users', {
                     headers: {
                         Authorization: token
                     }
@@ -44,7 +44,7 @@ const AllUsers = () => {
         }
 
         try {
-            await axios.delete(`https://blogapi2-pxnf.onrender.com/api/all-users/${userId}`, {
+            await axios.delete(`https://blogapi2-o4p8.onrender.com/api/all-users/${userId}`, {
                 headers: {
                     Authorization: token
                 }

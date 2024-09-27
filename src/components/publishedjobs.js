@@ -21,7 +21,7 @@ const PublishedJobs = () => {
             
             }
             try {
-                const response = await axios.get('https://blogapi2-pxnf.onrender.com/api/published-jobs', {
+                const response = await axios.get('https://blogapi2-o4p8.onrender.com/api/published-jobs', {
                     headers: {
                         Authorization: token
                       }
@@ -41,7 +41,7 @@ const PublishedJobs = () => {
     const handleUnpublish = async (jobId) => {
         try {
         const token = localStorage.getItem('token');
-        await axios.put(`https://blogapi2-pxnf.onrender.com/api/${jobId}/unpublish`, null, {
+        await axios.put(`https://blogapi2-o4p8.onrender.com/api/${jobId}/unpublish`, null, {
                 headers: {
                     Authorization: token
                 }

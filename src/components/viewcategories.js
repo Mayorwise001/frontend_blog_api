@@ -18,7 +18,7 @@ const ViewCategories = () => {
                 return;
             }
             try {
-                const response = await axios.get('https://blogapi2-pxnf.onrender.com/api/all-categories', {
+                const response = await axios.get('https://blogapi2-o4p8.onrender.com/api/all-categories', {
                     headers: {
                         Authorization: token
                     }
@@ -41,7 +41,7 @@ const ViewCategories = () => {
 
         try {
             const token = localStorage.getItem('token');
-            await axios.delete(`https://blogapi2-pxnf.onrender.com/api/delete-category/${categoryId}`, {
+            await axios.delete(`https://blogapi2-o4p8.onrender.com/api/delete-category/${categoryId}`, {
                 headers: {
                     Authorization: token
                 }

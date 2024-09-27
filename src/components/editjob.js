@@ -27,7 +27,7 @@ const EditJob = () => {
             }
 
             try {
-                const response = await axios.get(`https://blogapi2-pxnf.onrender.com/api/job-details/${id}`, {
+                const response = await axios.get(`https://blogapi2-o4p8.onrender.com/api/job-details/${id}`, {
                     headers: {
                         Authorization: token
                     }
@@ -67,7 +67,7 @@ const EditJob = () => {
         }
 
         try {
-            await axios.put(`https://blogapi2-pxnf.onrender.com/api/job-details/${id}`, formData, {
+            await axios.put(`https://blogapi2-o4p8.onrender.com/api/job-details/${id}`, formData, {
                 headers: {
                     Authorization: token
                 }
