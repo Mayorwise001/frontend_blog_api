@@ -26,7 +26,7 @@ A robust admin interface built with React and Axios, designed to simplify the ma
 
 2. Communicates efficiently with the backend using Axios.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This portal exemplifies expertise in React for dynamic frontend development, API integration using Axios, and creating user-centric interfaces tailored for job portal administration.
 
 ### `npm run eject`
 
