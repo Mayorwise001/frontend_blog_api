@@ -1,8 +1,8 @@
 # Advanced Job Management Admin Portal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A robust admin interface built with React and Axios, designed to simplify the management of job portals. This portal empowers administrators with tools to create, categorize, and oversee job postings while managing user accounts securely.
 
-## Available Scripts
+## Key Features
 
 In the project directory, you can run:
 
