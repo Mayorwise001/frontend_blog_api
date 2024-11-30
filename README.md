@@ -17,6 +17,7 @@ A robust admin interface built with React and Axios, designed to simplify the ma
 ### 🔹 User Account Administration
 
 1. Manage user profiles with options to securely update or delete accounts.
+
 2. Enforce secure password updates to maintain data privacy.
 
 ### `npm run build`
