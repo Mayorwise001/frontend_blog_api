@@ -16,8 +16,8 @@ A robust admin interface built with React and Axios, designed to simplify the ma
 
 ### 🔹 User Account Administration
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Manage user profiles with options to securely update or delete accounts.
+2. Enforce secure password updates to maintain data privacy.
 
 ### `npm run build`
 
