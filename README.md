@@ -20,13 +20,11 @@ A robust admin interface built with React and Axios, designed to simplify the ma
 
 2. Enforce secure password updates to maintain data privacy.
 
-### `npm run build`
+### 🔹 Secure and Reliable
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Incorporates robust user authentication and secure data handling.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Communicates efficiently with the backend using Axios.
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
