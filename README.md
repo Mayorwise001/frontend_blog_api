@@ -40,4 +40,8 @@ This portal exemplifies expertise in React for dynamic frontend development, API
 
 Designed for administrators, this portal is a practical solution for managing job platforms efficiently and securely, making it an essential tool for modern recruitment systems.
 
-Let me know if you'd like further refinements or additional sections for your GitHub README!
+## Contact
+For questions or support, reach out:
+
+Name: Tomosori Joseph Mayowa
+Email: tomosorijosephmayowa@gmail.com
