@@ -14,7 +14,7 @@ A robust admin interface built with React and Axios, designed to simplify the ma
 
 
 
-### `npm test`
+### 🔹 User Account Administration
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
